@@ -1,0 +1,237 @@
+
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0
+}
+
+/* astérisk = par défaut, lors des calculs de flex? */
+
+
+.presentation-contenu {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+
+.bloc-1 {
+	width: 50%;
+	height: 100px;
+}
+
+@media screen and (max-width: 1100px) {
+	.bloc-1 {
+		width: 100%;
+	}
+}
+
+
+@media screen and (max-width: 800px) {
+	.bloc-1 {
+		width: 100%;
+	}
+}
+
+
+body {
+	font-family: "Century Gothic";
+	background-color:rgb(214,242,220);
+	color: rgb(50, 139, 69);
+}
+
+
+h1 {
+	margin-left: 5%;
+	margin-bottom: 20px;
+}
+
+h2 {
+	margin-top: 25px;
+	margin-left: 5%;
+	margin-bottom: 20px;
+}
+
+h3 {
+	margin-left: 5%;
+	margin-bottom: 10px;
+	margin-top: 25px;
+}
+
+.bandeau {
+    background-color: rgb(109, 214, 130);
+    border-bottom: 2px solid rgb(50, 107, 62);
+    position: fixed;
+    padding-right: 100%;
+    z-index: 10; /* Ensure the bandeau stays on top */
+    width: 100%; /* Add width if needed to ensure it stretches across the screen */
+}
+
+.barre_de_navigation {
+	margin-top: 10px;
+	margin-bottom: 100px;
+	margin-left: 7%;
+	background-color:rgb(180, 231, 192);
+	box-shadow: 15px 15px 0px rgb(62,196,88);
+	border: 3px solid rgb(62,196,88);
+	border-top: 3px solid rgb(62,196,88);
+	border-left: 3px solid rgb(62,196,88);
+	border-right: 3px solid rgb(62,196,88);
+	border-radius: 10px;
+	padding: 30px 0px 0px 0px;
+	max-width: 87%;
+	width: 87%;
+}
+
+
+.nav {
+	text-align: center;
+	padding-bottom: 30px;
+	font-size: 40px;
+	border-bottom: 3px solid rgb(62,196,88);
+}
+
+
+.bandeau_boutons {
+	color: white;
+}
+
+
+.navigation_bouton1 {
+	padding: 30px 12% 30px 12%; /* padding: 30px 168px 30px 168px; */
+	border-bottom-left-radius: 10px;
+	justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.navigation_bouton2 {
+	padding: 30px 12% 30px 12%; /* padding: 30px 184px 30px 184px; */
+	border-right: 3px solid rgb(62,196,88);
+	border-left: 3px solid rgb(62,196,88);
+	justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.navigation_bouton3 {
+	padding: 30px 12% 30px 12%; /* padding: 30px 140px 30px 140px; */
+	border-bottom-right-radius: 10px;
+	justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+
+.aligner {
+    display: flex;
+    align-items: center; /* Vertically center the image and header text */
+}
+
+
+.gap {
+	padding: 0px 100px 0px 0px;
+}
+
+
+.logo {
+    margin-right: 50px; 
+	margin-left: 50px;
+}
+
+
+.link {
+    font-size: 30px;
+	display: flex;
+	justify-content: center;
+}
+
+
+.link a {
+    text-decoration: none;
+    color: white;
+    display: inline-block; /* ensures that the <a> elements are treated as block-like elements, so the transform property can be applied.*/
+    transition: transform 0.3s ease; /* Smooth transition effect */
+}
+
+
+.link a:hover {
+    color: rgb(62,196,88);
+    text-decoration: none;
+    transform: scale(1.2); /* Scale effect on hover */
+    z-index: 1; /* Ensure the hovered element is above other elements but below bandeau */
+}
+
+
+.slogan {
+	text-align: center;
+	max-width: 95%;
+	width: 95%;
+	margin-left: 30px;
+	margin-top: 170px;
+	padding: 50px 0px 50px 0px
+}
+
+
+.image {
+	width: 100%;
+    height: auto; /* Keep the aspect ratio intact */
+    display: block; /* Ensure no extra space below the image */
+	border: 2px solid rgb(50, 107, 62);
+}
+
+
+.image2 {
+	width: 300px;
+	max-width: 19%;
+	height: auto;
+	float: left;
+	margin-left: 7%;
+	margin-right: 1.5%;
+	margin-bottom: 1%;
+}
+
+.image3 {
+	width: 300px;
+	max-width: 19%;
+	height: auto;
+	float: right;
+	margin-right: 7%;
+	margin-left: 3%;
+}
+
+
+.images_des_fleurs {
+	margin-left: 7%;
+}
+
+
+.images_des_fleurs a {
+    max-width: 19%; /* Each image will take a maximum of 18% of the container width */
+	margin-bottom: 1%;
+}
+
+.images_des_fleurs a:hover {
+    transform: scale(1.11); /* Slightly zoom in on hover */
+	transition: transform 0.3s ease;
+}
+
+.gap {
+	gap: 1%;
+}
+
+.details_fleur {
+	padding-bottom: 20px;
+	border-bottom: 2px solid rgb(50, 107, 62);
+}
+
+
+p {
+	margin-left: 5%;
+}
+
+.flower-list {
+    margin-left: 10%;
+	margin-bottom: 20px;
+}
+
+.flower-list2 {
+    margin-left: 7%;
+}
