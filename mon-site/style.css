@@ -107,7 +107,7 @@ h4 {
 
 
 .navigation_bouton1 {
-	padding: 30px 12% 30px 12%; /* padding: 30px 168px 30px 168px; */
+	padding: 30px 12% 30px 12%; 
 	border-bottom-left-radius: 10px;
 	justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
@@ -115,7 +115,7 @@ h4 {
 }
 
 .navigation_bouton2 {
-	padding: 30px 12% 30px 12%; /* padding: 30px 184px 30px 184px; */
+	padding: 30px 12% 30px 12%; 
 	border-right: 3px solid rgb(62,196,88);
 	border-left: 3px solid rgb(62,196,88);
 	justify-content: center; /* Center horizontally */
@@ -124,7 +124,7 @@ h4 {
 }
 
 .navigation_bouton3 {
-	padding: 30px 12% 30px 12%; /* padding: 30px 140px 30px 140px; */
+	padding: 30px 12% 30px 12%;
 	border-bottom-right-radius: 10px;
 	justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
